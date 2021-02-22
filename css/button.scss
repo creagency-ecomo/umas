@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+$white: #fff;
+$red: #f33;
+$blue:#0071a1;
+$light-blue:#00bcd4;
+$light-blue2:#00a5bb;
+$light-green:#0fad5e;
+$light-green2:#008040;
+$light-gray:#f3f5f6;
+
+$green1: #009966;
+$green2: #12663c;
+
+.btn-container {
+    padding: 10px 100px;
+  }
+
+  .btn-primary {
+    color: $green2;
+    cursor: pointer;
+    background: $light-gray;
+    border: 1px solid $green2;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .btn-secondary {
+    color: $white;
+    cursor: pointer;
+    background: $green2;
+    border: 1px solid $green2;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .btn-next{
+    color: $white;
+    cursor: pointer;
+    background: $green2;
+    border: 1px solid $green2;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+  }
+  .btn-back{
+    color: $green2;
+    cursor: pointer;
+    background: $white;
+    border: 1px solid $green2;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+  }
+  .btn-download{
+    color: $white;
+    cursor: pointer;
+    background: $green2;
+    border: 1px solid $green2;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+  }
+  .btn-clear{
+    color: $green2;
+    cursor: pointer;
+    background: $white;
+    border: 1px solid $green2;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+  }
+  .btn-pages{
+    color: $white;
+    cursor: pointer;
+    background: $green1;
+    border: 1px solid $green1;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+  }
+  .btn-upload{
+    color: $green2;
+    cursor: pointer;
+    background: $white;
+    border: 1px solid $green2;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+  }
+/*--------------------------
+戻る・次へ・ダウンロードボタンを囲むdiv
+--------------------------*/
+.nextpage_btn{
+  padding: 10px 0 10px 10px;
+  margin: 0 0 0 auto;
+
+}
+.nextline_btn{
+  padding: 10px;
+  margin: 0 0 0 auto;
+
+}
+.backpage_btn{
+  padding: 10px;
+}
+.upload_btn{
+  margin: 10px 0 0 44%;
+}
+  /*——————————————————————
+  　　ページネーション
+  ——————————————————————*/
+  .pagenav {
+    display: flex;
+    padding: 10px;
+    margin-left: 20%;
+    //justify-content: center;
+
+    li {
+      span {
+        background: $green2;//#007cba;
+        border: 1px solid $green2;
+        color: white;
+        display: inline-block;
+        font-size: 14px;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      a {
+        background: #f3f5f6;
+        border: 1px solid #008000;
+        color: #008000;//#0071a1;
+        display: inline-block;
+        font-size: 14px;
+        margin: 10px;
+        padding: 10px;
+      }
+    }
+  }
+
+  /*ボタン共通*/
+
+  .btn, a.btn, button.btn {
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    text-decoration: none;
+  }
+
+
+/*--------------------
+ラジオボタンの余白
+.radiobtn{
+  padding-bottom: 10px;
+}
+--------------------*/
+
+/*------------------
+help popup
+-------------------*/
+/* 表示文字の装飾 */
+.tooltip1{
+  float: right;
+  padding-right: 0;
+  color: $green1;
+  display: block; /* インライン要素化 */
+}
+
+/* ツールチップ部分を隠す */
+.tooltip1 span {
+  display: none;
+}
+
+/* マウスオーバー */
+.tooltip1:hover {
+  position: relative;
+  color: $green2;//#333;
+  cursor: pointer;
+}
+
+/* マウスオーバー時にツールチップを表示 */
+.tooltip1:hover span {
+  display: block; /* ボックス要素にする */
+  position: absolute; /* relativeからの絶対位置 */
+  top: 25px;
+  right: 0;
+  font-size: 90%;
+  color: #fff;
+  background-color: $green1;//#51A2C1;
+  width: 205px;
+  padding: 5px;
+  border-radius:3px;
+  z-index:100;
+}
+
+/* フキダシ部分を作成 */
+.tooltip1 span:before{
+  content:'';
+  display:block;
+  position:absolute;  /* relativeからの絶対位置 */
+  height:0;
+  width:0;
+  top:-13px;
+  right:15px;
+  border:13px transparent solid;
+  border-right-width:0;
+  border-left-color:$green1;
+  transform:rotate(270deg);   /* 傾きをつける */
+  -webkit-transform:rotate(270deg);
+  -o-transform:rotate(270deg);
+  z-index:100;
+}
+/*-----------------------
+チェックボックス
+-----------------------*/
+/* チェックボックス01 */
+input[type=checkbox] {
+  display: none;
+}
+.checkbox01 {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 30px;
+  position: relative;
+  width: auto;
+}
+.checkbox01::before {
+  background: #fff;
+  border: 1px solid #231815;
+  content: '';
+  display: block;
+  height: 16px;
+  left: 5px;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+  width: 16px;
+}
+.checkbox01::after {
+  border-right: 3px solid $green1;
+  border-bottom: 3px solid $green1;
+  content: '';
+  display: block;
+  height: 9px;
+  left: 10px;
+  margin-top: -7px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 5px;
+}
+input[type=checkbox]:checked + .checkbox01::after {
+  opacity: 1;
+}
