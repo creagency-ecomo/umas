@@ -159,7 +159,7 @@ $big: 18px;
   color: #000;
   font-size: $normal;
   padding: 10px;
-  width: 300px;
+  width: 350px;
 }
 
 /*-------------
@@ -238,8 +238,16 @@ background-position: right center;
       color: $green2;
       padding: 0 20px;
     }
+   }
   }
-}
+  /*---------------------
+  空白divclass
+  ----------------------*/
+  .blank{
+    width: 100%;
+    padding: 30px;
+  }
+
 .container-login {
   background-color: $white;
   margin: 100px auto;
@@ -301,6 +309,13 @@ input {
     margin: 5px 0;
     padding: 10px;
     width: 165px;
+  }
+  &[type=submit]{
+    padding: 7px 15px;
+    margin-right: 21px;
+    color: $green2;
+    background-color: $white;
+    border: 1px solid $green2;
   }
 
 }
@@ -413,6 +428,7 @@ input {
 
 .checkbox-input {
   display: none;
+
 }
 
 .checkbox-parts {

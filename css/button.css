@@ -120,11 +120,26 @@
   width: 200px;
 }
 
+.btn-master {
+  color: #fff;
+  cursor: pointer;
+  background: #009966;
+  border: 1px solid #009966;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
 /*--------------------------
 戻る・次へ・ダウンロードボタンを囲むdiv
 --------------------------*/
 .nextpage_btn {
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 0px 10px;
   margin: 0 0 0 auto;
 }
 
@@ -138,7 +153,19 @@
 }
 
 .upload_btn {
-  margin: 10px 0 0 44%;
+  padding: 0px 0 30px 10px;
+  margin: 0 0 0 38%;
+}
+
+.another_btn {
+  padding: 30px 30px 0px 10px;
+  margin: 0 0 0 auto;
+}
+
+.master_btn {
+  padding: 30px 30px 0px 10px;
+  margin: 0 0 0 auto;
+  width: 100%;
 }
 
 /*——————————————————————
@@ -149,7 +176,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 
 .pagenav li span {

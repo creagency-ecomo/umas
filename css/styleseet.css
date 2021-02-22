@@ -151,7 +151,7 @@
   color: #000;
   font-size: 14px;
   padding: 10px;
-  width: 300px;
+  width: 350px;
 }
 
 /*-------------
@@ -247,6 +247,14 @@ background-position: right center;
   padding: 0 20px;
 }
 
+/*---------------------
+  空白divclass
+  ----------------------*/
+.blank {
+  width: 100%;
+  padding: 30px;
+}
+
 .container-login {
   background-color: #fff;
   margin: 100px auto;
@@ -316,6 +324,14 @@ input[type=small-text] {
   margin: 5px 0;
   padding: 10px;
   width: 165px;
+}
+
+input[type=submit] {
+  padding: 7px 15px;
+  margin-right: 21px;
+  color: #12663c;
+  background-color: #fff;
+  border: 1px solid #12663c;
 }
 
 /*——————————————————————
