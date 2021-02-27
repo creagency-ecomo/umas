@@ -256,6 +256,37 @@
     padding-left: 20px;
     }
 }
+/*------------------------
+6312.html (中table/text真ん中)
+------------------------*/
+.table-list4 {
+  background-color: white;
+  line-height: 16px;
+  padding: 10px 0;
+  width: 70%;
+
+
+  tr td {
+    border: solid 1px black;
+    padding: 15px;
+  }
+
+  th {
+    background: #bfbfbf;
+    border: 1px solid black;
+    font-size: 12px;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  td {
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+  }
+
+}
 /*----------------------
 6121.html(小table)
 -----------------------*/
@@ -264,13 +295,10 @@
   line-height: 16px;
   padding: 10px 0;
   width: 40%;
-
-
   tr td {
     border: solid 1px black;
     padding: 20px;
   }
-
   th {
     background: #bfbfbf;
     border: 1px solid black;
@@ -278,7 +306,6 @@
     padding: 20px;
     font-weight: bold;
   }
-
   td {
     background-color: white;
     font-size: 15px;
@@ -288,10 +315,6 @@
   }
 
 }
-
-/*------------------------
-
-------------------------*/
 
 .table-basic {
   width: 100%;
@@ -401,21 +424,7 @@
   }
 
 }
-/*-------------------------
-btn-table  6132.html
 
-
-.btn-table{
-  padding: 20px 0;
-  width: 30%;
-  ul{
-    display:flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-    height: 450px;
-  }
-}
--------------------------*/
 /*ネットワーク利用制限チェック*/
 
 .table-carrer {

@@ -120,18 +120,18 @@ $green2: #12663c;
     width: 200px;
   }
   .btn-master{
-    color: $white;
-    cursor: pointer;
-    background: $green1;
-    border: 1px solid $green1;
-    border-radius: 50px;
-    box-sizing: border-box;
-    display: block;
-    font-size: 14px;
-    padding: 10px;
-    text-align: center;
-    width: 150px;
-  }
+      display:inline-block;
+      background:$green1;
+      border: 1px solid $green1;
+      border-radius: 50px;
+      font-size: 14px;
+      box-sizing: border-box;
+      padding:10px;
+      text-align:center;
+      margin:5px;
+      cursor:pointer;
+      }
+
 
 /*--------------------------
 戻る・次へ・ダウンロードボタンを囲むdiv
@@ -147,7 +147,7 @@ $green2: #12663c;
 
 }
 .backpage_btn{
-  padding: 10px;
+  padding: 10px 0;
 }
 .upload_btn{
   //margin: 10px 0 0 44%;
@@ -162,6 +162,9 @@ $green2: #12663c;
   padding: 30px 30px 0px 10px;
   margin: 0 0 0 auto;
   width: 100%;
+  a{
+    color: white;
+  }
 }
   /*——————————————————————
   　　ページネーション
@@ -218,61 +221,7 @@ $green2: #12663c;
 }
 --------------------*/
 
-/*------------------
-help popup
--------------------*/
-/* 表示文字の装飾 */
-.tooltip1{
-  float: right;
-  padding-right: 0;
-  color: $green1;
-  display: block; /* インライン要素化 */
-}
 
-/* ツールチップ部分を隠す */
-.tooltip1 span {
-  display: none;
-}
-
-/* マウスオーバー */
-.tooltip1:hover {
-  position: relative;
-  color: $green2;//#333;
-  cursor: pointer;
-}
-
-/* マウスオーバー時にツールチップを表示 */
-.tooltip1:hover span {
-  display: block; /* ボックス要素にする */
-  position: absolute; /* relativeからの絶対位置 */
-  top: 25px;
-  right: 0;
-  font-size: 90%;
-  color: #fff;
-  background-color: $green1;//#51A2C1;
-  width: 205px;
-  padding: 5px;
-  border-radius:3px;
-  z-index:100;
-}
-
-/* フキダシ部分を作成 */
-.tooltip1 span:before{
-  content:'';
-  display:block;
-  position:absolute;  /* relativeからの絶対位置 */
-  height:0;
-  width:0;
-  top:-13px;
-  right:15px;
-  border:13px transparent solid;
-  border-right-width:0;
-  border-left-color:$green1;
-  transform:rotate(270deg);   /* 傾きをつける */
-  -webkit-transform:rotate(270deg);
-  -o-transform:rotate(270deg);
-  z-index:100;
-}
 /*-----------------------
 チェックボックス
 -----------------------*/

@@ -44,7 +44,7 @@ $big: 18px;
  }
 
 .header-logo {
-  background-color: $green2;//$dark-blue;
+  background-color: $green2;
   color: $white;
   font-size: $normal;
   padding: 20px;
@@ -61,6 +61,11 @@ $big: 18px;
     color: $white;
     font-size: $normal;
   }
+  span{
+    color: $white;
+    font-size: $normal;
+    padding-left: 30px;
+  }
 }
 
 
@@ -76,8 +81,7 @@ $big: 18px;
 .sidebar-main {
   background-color: $light-black;
   box-sizing: border-box;
-  //position: fixed;
-  //z-index: 9;
+
   ul {
     height: 660px;//840px;
     padding: 20px;
