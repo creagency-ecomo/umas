@@ -214,7 +214,7 @@ background-position: right center;
       color: $blue;
     }
   }
- }
+}
 
  .container-btn {
   display: flex;
@@ -249,7 +249,74 @@ background-position: right center;
   ----------------------*/
   .blank{
     width: 100%;
+    padding: 20px;
+  }
+
+  /*---------------------
+  5101.html~ 画像div
+  ---------------------*/
+  .image-part{
+    width: 100%;
     padding: 30px;
+    background-color: $white;
+    height: 100%;
+
+    img{
+      padding-top: 20px;
+    }
+    .small{
+      width: 70%;
+    }
+  }
+
+  /*--------------------
+  5102.html~ 画像説明div
+  ---------------------*/
+  .explain{
+    width: 100%;
+    background-color: $white;
+    padding: 20px;
+    border: 1px solid $white;
+    border-radius: 10px;
+    p{
+      font-size: 16px;
+    }
+    ul{
+      padding: 10px 20px;
+      li{
+        list-style: disc;
+        padding: 5px 0;
+      }
+    }
+
+  }
+  /*--------------------
+  5111.html~ 画像2列
+  ---------------------*/
+  .image-part2{
+    width: 100%;
+    padding: 30px;
+    background-color: $white;
+    height: auto;
+
+    h2{
+      padding-bottom: 20px;
+    }
+    span{
+      padding-left: 10px;
+      .red{
+        color: $red;
+      }
+    }
+
+    ul{
+      display:flex;
+      flex-flow:wrap;
+    }
+    li{
+      width:50%;
+      box-sizing:content-box;
+    }
   }
 
 .container-login {
@@ -509,6 +576,13 @@ input {
     font-size: 14px;
     font-weight: bold;
     padding: 8px;
+
+  }
+  .loginer{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0 8px 250px;
   }
 }
 

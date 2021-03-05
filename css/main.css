@@ -357,24 +357,19 @@ input[type=email], input[type=number], input[type=password], input[type=tel], in
 
 /*——————————————————————
 　　エラー
-——————————————————————*/
 .error {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #cd0000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 10px;
+  p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+  }
 }
-
-.error p {
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 8px;
-}
-
+——————————————————————*/
 /*——————————————————————
 　　表示/非表示
 ——————————————————————*/

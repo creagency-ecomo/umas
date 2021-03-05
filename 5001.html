@@ -1,63 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-<title>商品マスタ検索</title>
-<link rel="stylesheet" href="scss/style.min.css">
-<link rel="stylesheet" href="scss/reset.min.css">
-<link rel="stylesheet" href="scss/main.min.css">
-<link rel="stylesheet" href="scss/popup.min.css">
-<link rel="stylesheet" href="scss/scroll.min.css">
-<link rel="stylesheet" href="scss/button.min.css">
-<link rel="stylesheet" href="scss/table.min.css">
-<!--下に出した表のポップアップ使用時のみ--> 
-<script type="text/javascript">
-function showBalloon(){
-var wObjballoon = document.getElementById("makeImg");
-if (wObjballoon.className == "balloon-none"){
-wObjballoon.className = "balloon";
-}else{
-wObjballoon.className = "balloon-none";
-}
-}
-</script> 
-<!--下に出した表のポップアップ使用時のみ-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <title>FAQ｜中古モバイル査定システム</title>
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/styleseet.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/table.css">
+
 </head>
-
 <body>
-
   <header class="header-main">
     <a href="2001.html" class="header-logo">
-        中古モバイル査定システム
+      中古モバイル査定システム
     </a>
     <nav role="navigation">
       <ul class="header-menu">
         <li>
           <a href="###">
-            宮坂浩一さん　こんにちは！
-          </a>
-        </li>
-        <li>
-          <a href="1001.html"><i class="fas fa-sign-out-alt"></i>
-            ログアウト
+            田中優衣さん　こんにちは！<span>ユーザーコード：600020</span>
           </a>
         </li>
       </ul>
     </nav>
+    <a class="logout" href="index.html"><i class="fas fa-sign-out-alt"></i>ログアウト</a>
   </header>
+
 
   <section class="container-main">
 
     <aside class="sidebar-main">
       <ul>
-        <li><a href="###" class="">メニュー</a></li>
-        <li><a href="2001.html" class="">買取査定</a></li>
-        <li><a href="3001.html" class="">商品マスタ検索</a></li>
-        <li><a href="5001.html" class="">査定IMEI</a></li>
-        <li><a href="6001.html" class="">マスタ管理</a></li>
+        <li><a href="2001.html">ダッシュボード</a></li>
+        <li><a href="3001.html">買取査定</a></li>
+        <li><a href="3001.html">査定データ</a></li>
+        <li><a class="pickup" href="5001.html">FAQ</a></li>
+        <li><a href="6001.html">マスタ管理</a></li><br><br>
+        <div class="qr-appli">
+          <li class="appli">検査/データ消去アプリ</li>
+          <li class="appli">https://qwertyuiop.jp/</li>
+          <li class="appli"><img src="images/qrcode.png" alt=""></li>
+        </div>
       </ul>
+
       <footer class="footer-main">
         <p>©株式会社クリエージェンシー</p>
       </footer>
@@ -65,73 +53,68 @@ wObjballoon.className = "balloon-none";
 
     <div class="contents">
       <h1>
-        査定IMEI
+        FAQ
       </h1>
       <ul class="contents-breadcrumb">
         <li>
           <a href="2001.html">
             <i class="fas fa-home"></i>
-              HOME
+            HOME&ensp;
           </a>
         </li>
         <li>
           <a href="5001.html">
             <i class="fas fa-chevron-right"></i>
-              査定IMEI
+            FAQ
           </a>
         </li>
       </ul>
-
       <div class="container">
-        <input type="text" placeholder="IMEI（入力してください）">
-      </div>
 
-      <div class="container-btn">
-        <a href="###" class="btn-secondary" onclick="showBalloon()">検索</a>
-      </div>
-
-      <div class="container-table">
-        <div class="balloon-none" id="makeImg">
-          <h2>検索結果<span>1</span></h2>
-          <table class="table-list">
-            <tr>
-              <th>No</th>
-              <th>IMEI</th>
-              <th>モデル</th>
-              <th>商品名</th>
-              <th>キャリア</th>
-              <th>メーカー</th>
-              <th>NW利用制限</th>
-              <th>アクティべ-ションロック</th>
-              <th>ランク</th>
-              <th>査定店舗</th>
-              <th>査定日</th>
-              <th>査定者</th>
-            </tr>
-            <tbody>
-              <tr>
-                <td data-label="No">1</td>
-                <td data-label="IMEI">364721923220125</td>
-                <td data-label="モデル">MTE22J/A</td>
-                <td data-label="商品名">iPhone 888　Pro 256GB ゴールド</td>
-                <td data-label="キャリア">SoftBank</td>
-                <td data-label="メーカー">Apple</td>
-                <td data-label="NW利用制限">〇</td>
-                <td data-label="アクティべ-ションロック">未解除</td>
-                <td data-label="ランク">S</td>
-                <td data-label="査定店舗">エコモ東京</td>
-                <td data-label="査定日">2021/01/01</td>
-                <td data-label="査定者">白坂英樹</td>
-              </tr>
-            </tbody> 
-          </table>
-          <ul class="pagenav">
+        <div class="nextline-table">
+          <ul>
+            <li>
+              <div class="another_btn">
+                <a href="5101.html" class="btn-pages">Wi-Fi接続方法</a>
+              </div>
+            </li>
+            <li>
+              <div class="another_btn">
+                <a href="5102.html" class="btn-pages">IMEI/モデル確認方法</a>
+              </div>
+            </li>
+            <li>
+              <div class="another_btn">
+                <a href="6103.html" class="btn-pages">アクティベーションロック確認方法</a>
+              </div>
+            </li>
+            <li>
+              <div class="another_btn">
+                <a href="5104.html" class="btn-pages">ネットワーク利用制限確認方法</a>
+              </div>
+            </li>
+            <li>
+              <div class="another_btn">
+                <a href="5105.html" class="btn-pages">検査アプリダウンロード方法</a>
+              </div>
+            </li>
+            <li>
+              <div class="another_btn">
+                <a href="5106.html" class="btn-pages">消去アプリダウンロード方法</a>
+              </div>
+            </li>
+            <li>
+              <div class="another_btn">
+                <a href="5111.html" class="btn-pages">外装評価事例</a>
+              </div>
+            </li>
           </ul>
-          <a href="###" class="btn-secondary">ダウンロード</a>
+        </div>
       </div>
 
-      </div>
+    </div>
 
+    </div>
   </section>
 
 </body>
